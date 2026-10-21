@@ -337,7 +337,9 @@ class _ColorScannerScreenState extends State<ColorScannerScreen> {
                 backgroundColor: isComplete ? const Color(0xFF00E676) : const Color(0xFF2979FF),
                 foregroundColor: Colors.black,
                 padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: BorderRadius.circular(14),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
                 elevation: 4,
               ),
               onPressed: () {

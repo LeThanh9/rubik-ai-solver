@@ -248,7 +248,9 @@ class _AiAssistantDialogState extends State<AiAssistantDialog> {
                     backgroundColor: const Color(0xFF2979FF),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: BorderRadius.circular(14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                    ),
                   ),
                   icon: const Icon(Icons.analytics_outlined, size: 20),
                   label: const Text(

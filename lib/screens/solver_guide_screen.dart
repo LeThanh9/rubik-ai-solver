@@ -143,7 +143,9 @@ class _SolverGuideSheetState extends State<SolverGuideSheet> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF2979FF),
-                shape: BorderRadius.circular(12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
               ),
               onPressed: () => Navigator.of(context).pop(),
               child: const Text('Đóng', style: TextStyle(color: Colors.white)),
